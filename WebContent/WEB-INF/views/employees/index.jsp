@@ -16,7 +16,7 @@
                     <th>操作</th>
                 </tr>
                 <c:forEach var="employee" items="${employees}" varStatus="status">
-                    <tr class="row${status_count % 2}">
+                    <tr class="row${status.count % 2}">
                         <td><c:out value="${employee.code}" /></td>
                         <td><c:out value="${employee.name}" /></td>
                         <td>
@@ -25,7 +25,7 @@
                                     (削除済み)
                                 </c:when>
                                 <c:otherwise>
-                                    <a href="c:url value='/employees/show?id=${employee.id}' />">詳細を表示</a>
+                                    <a href="<c:url value='/employees/show?id=${employee.id}' />">詳細を表示</a>
                                 </c:otherwise>
                             </c:choose>
                         </td>
