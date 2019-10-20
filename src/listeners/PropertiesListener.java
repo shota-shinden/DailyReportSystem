@@ -17,12 +17,12 @@ import javax.servlet.annotation.WebListener;
  *
  */
 @WebListener
-public class ProrertiesListener implements ServletContextListener {
+public class PropertiesListener implements ServletContextListener {
 
     /**
      * Default constructor.
      */
-    public ProrertiesListener() {
+    public PropertiesListener() {
         // TODO Auto-generated constructor stub
     }
 
