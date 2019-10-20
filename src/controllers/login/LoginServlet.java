@@ -86,7 +86,7 @@ public class LoginServlet extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/login/login.jsp");
             rd.forward(request, response);
         } else {
-            request.getSession().setAttribute("login_employe", e);
+            request.getSession().setAttribute("login_employee", e);
 
             request.getSession().setAttribute("flush", "ログインしました。");
             response.sendRedirect(request.getContextPath()+ "/");
