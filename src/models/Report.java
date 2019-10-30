@@ -58,8 +58,15 @@ public class Report {
     @Column(name = "created_at", nullable = false)
     private Timestamp created_at;
 
-    @Column(name = "upfated_at", nullable = false)
+    @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
+
+    @Column(name = "workIn_time", nullable = false)
+    private String workIn_time;
+
+    @Column(name = "workOut_time", nullable = false)
+    private String workOut_time;
+
 
     public Integer getId() {
         return id;
@@ -115,6 +122,22 @@ public class Report {
 
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
+    }
+
+    public String getWorkIn_time() {
+        return workIn_time;
+    }
+
+    public void setWorkIn_time(String workIn_time) {
+        this.workIn_time = workIn_time;
+    }
+
+    public String getWorkOut_time() {
+        return workOut_time;
+    }
+
+    public void setWorkOut_time(String workOut_time) {
+        this.workOut_time = workOut_time;
     }
 
 

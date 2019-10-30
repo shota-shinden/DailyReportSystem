@@ -31,7 +31,7 @@
                 ${param.content}
             </div>
             <div id="footer">
-                by Shota Shinden.
+                by udon.
             </div>
         </div>
     </body>

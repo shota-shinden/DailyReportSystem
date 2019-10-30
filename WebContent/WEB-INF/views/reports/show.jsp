@@ -18,6 +18,14 @@
                             <td><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
                         </tr>
                         <tr>
+                            <th>出社</th>
+                            <td><c:out value="${report.workIn_time}" /></td>
+                        </tr>
+                        <tr>
+                            <th>退社</th>
+                            <td><c:out value="${report.workOut_time}" /></td>
+                        </tr>
+                        <tr>
                             <th>内容</th>
                             <td>
                                 <pre><c:out value="${report.content}" /></pre>

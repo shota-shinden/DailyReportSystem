@@ -15,6 +15,8 @@
                 <tr>
                     <th class="report_name">氏名</th>
                     <th class="report_date">日付</th>
+                    <th class="workIn_time">出社</th>
+                    <th class="workOut_time">退社</th>
                     <th class="report_title">タイトル</th>
                     <th class="report_action">操作</th>
                 </tr>
@@ -22,6 +24,8 @@
                     <tr class="row${status.count % 2}">
                         <td class="report_name"><c:out value="${report.employee.name}" /></td>
                         <td class="report_date"><fmt:formatDate value='${report.report_date}' pattern='yyyy-MM-dd' /></td>
+                        <td class="workIn_time"><c:out value="${report.workIn_time}" /></td>
+                        <td class="workOut_time"><c:out value="${report.workOut_time}" /></td>
                         <td class="report_title">${report.title}</td>
                         <td class="report_action"><a href="<c:url value='/reports/show?id=${report.id}' />">詳細を見る</a></td>
                     </tr>
